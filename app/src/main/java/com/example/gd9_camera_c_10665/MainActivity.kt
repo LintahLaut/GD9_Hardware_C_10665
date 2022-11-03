@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         try{
-            mCamera = Camera.open(1)
+            mCamera = Camera.open()
         }catch (e: Exception){
             Log.d("Error", "Failed to get Camera" + e.message)
         }
